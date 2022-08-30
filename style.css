@@ -1,0 +1,344 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+    background: #555;
+  }
+   */
+  #globe {
+    cursor: move;  
+  }
+  
+  /* #current {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    margin-left: 4%;
+    margin-top: 4%;
+  } */
+
+  /*chart card*/
+  
+.cardx {
+  background-color: black;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  perspective: 1500;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-height: 600px) {
+  .cardx {
+    width: 1000px;
+    height: 450px;
+  }
+}
+.cardx h2, .cardx h3, .cardx P {
+  transform: translateZ(2px);
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  font-weight: 300;
+  padding: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+@media (min-height: 600px) {
+  .cardx h2, .cardx h3, .cardx P {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+.cardx h2 {
+  margin: 20px 0 0 0;
+}
+.cardx h3 {
+  margin: 10px 0 40px 0;
+}
+@media (min-height: 600px) {
+  .cardx h3 {
+    margin: 20px 0 40px 0;
+  }
+}
+.cardx P {
+  margin: 0px 0 30px 0;
+  font-size: 16px;
+}
+@media (min-height: 600px) {
+  .cardx P {
+    margin: 0px 0 40px 0;
+    font-size: 21px;
+  }
+}
+.cardx .chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: translateZ(2px);
+  transition: transform 0.5s ease-in-out;
+}
+.cardx .photo {
+  position: absolute;
+  transform: translateZ(1px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://thumbs.dreamstime.com/b/lake-plastic-trash-water-city-floating-buildings-skyline-vector-cartoon-illustration-sea-pollution-waste-237760112.jpg") no-repeat center center;
+  background-color: #0075FF;
+  background-size: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+.cardx .photo:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease-in-out;
+}
+.cardx .bar {
+  will-change: height;
+  width: 15px;
+  height: 1px;
+  background-color: white;
+  transform: translateX(-7.5px) rotateX(-90deg) rotateY(-45deg);
+  transform-origin: 100% 100%;
+  transition: height 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  margin: 6px;
+  position: relative;
+  background: linear-gradient(to bottom, #feffff 0%, #ddf1f9 0%, #a0d8ef 100%);
+}
+@media (min-height: 600px) {
+  .cardx .bar {
+    margin: 10px;
+    width: 25px;
+    transform: translateX(-12.5px) rotateX(-90deg) rotateY(-45deg);
+  }
+}
+.cardx .bar:after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 15px;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  background-color: grey;
+  transform: rotateY(90deg);
+  transform-origin: 0% 50%;
+  background: linear-gradient(to bottom, #feffff 0%, #85d7f7 0%, #4c8596 100%);
+}
+@media (min-height: 600px) {
+  .cardx .bar:after {
+    width: 25px;
+    right: -25px;
+  }
+}
+.cardx .bar:before {
+  font-family: "Oxygen", sans-serif;
+  display: block;
+  content: "";
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  background-color: white;
+  transform: rotateX(90deg);
+  transform-origin: 0% 100%;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  line-height: 14px;
+  padding: 0;
+  transition: color 0.3s ease-in-out;
+}
+@media (min-height: 600px) {
+  .cardx .bar:before {
+    width: 25px;
+    height: 25px;
+    top: -25px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+/* .cardx .bar.bar1:before {
+  content: "M";
+}
+.cardx .bar.bar2:before {
+  content: "T";
+}
+.cardx .bar.bar3:before {
+  content: "W";
+}
+.cardx .bar.bar4:before {
+  content: "T";
+}
+.cardx .bar.bar5:before {
+  content: "F";
+}
+.cardx .bar.bar6:before {
+  content: "S";
+}
+.cardx .bar.bar7:before {
+  content: "S";
+}
+.cardx .bar.bar8:before {
+  content: "K";
+} */
+.cardx .bar span {
+  font-family: "Oxygen", sans-serif;
+  position: absolute;
+  transform: rotateZ(-90deg);
+  border-radius: 2px;
+  transform-origin: 0% 100%;
+  top: 20px;
+  white-space: nowrap;
+  text-align: right;
+  left: 18px;
+  padding: 5px;
+  color: black;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media (min-height: 600px) {
+  .cardx .bar span {
+    top: 70%;
+    left: 25px;
+    font-size: 13px;
+  }
+}
+
+.details .cardx {
+  transform: rotateX(60deg) translateY(150px);
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.75);
+}
+.details .cardx .chart {
+  transform: translateZ(40px) translatey(50px);
+}
+.details .cardx .bar {
+  transform: translateX(-7.5px) rotateX(-90deg) rotateY(-25deg);
+}
+@media (min-height: 600px) {
+  .details .cardx .bar {
+    transform: translateX(-12.5px) rotateX(-90deg) rotateY(-25deg);
+  }
+}
+.details .cardx .bar.bar1 {
+  height: 220px;
+  transition-delay: 0.3s;
+  margin-top: -50px;
+}
+.details .cardx .bar.bar2 {
+  height: 182px;
+  transition-delay: 0.2s;
+  margin-top: -12px;
+}
+.details .cardx .bar.bar3 {
+  height: 165px;
+  transition-delay: 0.1s;
+  margin-top: 5px;
+}
+.details .cardx .bar.bar4 {
+  height: 200px;
+  transition-delay: 0s;
+  margin-top: -30px;
+}
+.details .cardx .bar.bar5 {
+  height: 160px;
+  transition-delay: 0.1s;
+  margin-top: 10px;
+}
+.details .cardx .bar.bar6 {
+  height: 240px;
+  transition-delay: 0.2s;
+  margin-top: -70px;
+}
+.details .cardx .bar.bar7 {
+  height: 300px;
+  transition-delay: 0.3s;
+  margin-top: -130px;
+}
+.details .cardx .bar.bar8 {
+  height: 167px;
+  transition-delay: 0.3s;
+  margin-top: 3px;
+}
+.details .cardx .bar.bar9 {
+  height: 200px;
+  transition-delay: 0.3s;
+  margin-top: -20px;
+}
+.details .cardx .bar.bar10 {
+  height: 140px;
+  transition-delay: 0.3s;
+  margin-top: 30px;
+}
+.details .cardx .bar span {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.details .cardx .bar:before {
+  color: black;
+}
+.details .cardx .photo {
+  transform: translateZ(20px);
+}
+.details .cardx .photo:after {
+  background-color: rgba(0, 50, 100, 0.8);
+}
+.details .cardx h2 {
+  opacity: 0;
+  transform: translateZ(40px) translateY(-100px);
+}
+.details .cardx p {
+  opacity: 0;
+  transform: translateZ(40px) translateY(-80px);
+}
+.details .cardx h3 {
+  transform: translateZ(60px) translateY(100px);
+}
+
+/* .background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(120deg, rgba(50, 150, 100, 0.4), rgba(0, 0, 100, 0));
+}
+.background:before, .background:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 200, 0.4), rgba(0, 0, 200, 0));
+}
+.background:after {
+  background: linear-gradient(240deg, rgba(150, 50, 50, 0.4), rgba(0, 0, 200, 0));
+} */
+
+.info {
+  font-family: "Oxygen", sans-serif;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}

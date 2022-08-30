@@ -1,0 +1,1262 @@
+[
+ {
+  "id": -1,
+  "name": "Northern Cyprus",
+  "airQ": null
+ },
+ {
+  "id": -2,
+  "name": "Kosovo",
+  "airQ": 84
+ },
+ {
+  "id": -3,
+  "name": "Somaliland",
+  "airQ": null
+ },
+ {
+  "id": 4,
+  "name": "Afghanistan",
+  "airQ": 181
+ },
+ {
+  "id": 8,
+  "name": "Albania",
+  "airQ": 59
+ },
+ {
+  "id": 10,
+  "name": "Antarctica",
+  "airQ": 34
+ },
+ {
+  "id": 12,
+  "name": "Algeria",
+  "airQ": 68
+ },
+ {
+  "id": 16,
+  "name": "American Samoa",
+  "airQ": null
+ },
+ {
+  "id": 20,
+  "name": "Andorra",
+  "airQ": 31
+ },
+ {
+  "id": 24,
+  "name": "Angola",
+  "airQ": null
+ },
+ {
+  "id": 28,
+  "name": "Antigua and Barbuda",
+  "airQ": null
+ },
+ {
+  "id": 31,
+  "name": "Azerbaijan",
+  "airQ": null
+ },
+ {
+  "id": 32,
+  "name": "Argentina",
+  "airQ": 35
+ },
+ {
+  "id": 36,
+  "name": "Australia",
+  "airQ": 15
+ },
+ {
+  "id": 40,
+  "name": "Austria",
+  "airQ": 17
+ },
+ {
+  "id": 44,
+  "name": "Bahamas",
+  "airQ": null
+ },
+ {
+  "id": 48,
+  "name": "Bahrain",
+  "airQ": null
+ },
+ {
+  "id": 50,
+  "name": "Bangladesh",
+  "airQ": 173
+ },
+ {
+  "id": 51,
+  "name": "Armenia",
+  "airQ": 84
+ },
+ {
+  "id": 52,
+  "name": "Barbados",
+  "airQ": null
+ },
+ {
+  "id": 56,
+  "name": "Belgium",
+  "airQ": 24
+ },
+ {
+  "id": 60,
+  "name": "Bermuda",
+  "airQ": null
+ },
+ {
+  "id": 64,
+  "name": "Bhutan",
+  "airQ": null
+ },
+ {
+  "id": 68,
+  "name": "Bolivia, Plurinational State of",
+  "airQ": null
+ },
+ {
+  "id": 70,
+  "name": "Bosnia and Herzegovina",
+  "airQ": 56
+ },
+ {
+  "id": 72,
+  "name": "Botswana",
+  "airQ": null
+ },
+ {
+  "id": 74,
+  "name": "Bouvet Island",
+  "airQ": null
+ },
+ {
+  "id": 76,
+  "name": "Brazil",
+  "airQ": 32
+ },
+ {
+  "id": 84,
+  "name": "Belize",
+  "airQ": null
+ },
+ {
+  "id": 86,
+  "name": "British Indian Ocean Territory",
+  "airQ": null
+ },
+ {
+  "id": 90,
+  "name": "Solomon Islands",
+  "airQ": null
+ },
+ {
+  "id": 92,
+  "name": "Virgin Islands, British",
+  "airQ": null
+ },
+ {
+  "id": 96,
+  "name": "Brunei Darussalam",
+  "airQ": null
+ },
+ {
+  "id": 100,
+  "name": "Bulgaria",
+  "airQ": 31
+ },
+ {
+  "id": 104,
+  "name": "Myanmar",
+  "airQ": null
+ },
+ {
+  "id": 108,
+  "name": "Burundi",
+  "airQ": null
+ },
+ {
+  "id": 112,
+  "name": "Belarus",
+  "airQ": null
+ },
+ {
+  "id": 116,
+  "name": "Cambodia",
+  "airQ": null
+ },
+ {
+  "id": 120,
+  "name": "Cameroon",
+  "airQ": null
+ },
+ {
+  "id": 124,
+  "name": "Canada",
+  "airQ": 20
+ },
+ {
+  "id": 132,
+  "name": "Cape Verde",
+  "airQ": null
+ },
+ {
+  "id": 136,
+  "name": "Cayman Islands",
+  "airQ": null
+ },
+ {
+  "id": 140,
+  "name": "Central African Republic",
+  "airQ": null
+ },
+ {
+  "id": 144,
+  "name": "Sri Lanka",
+  "airQ": null
+ },
+ {
+  "id": 148,
+  "name": "Chad",
+  "airQ": 147
+ },
+ {
+  "id": 152,
+  "name": "Chile",
+  "airQ": 46
+ },
+ {
+  "id": 156,
+  "name": "China",
+  "airQ": 74
+ },
+ {
+  "id": 158,
+  "name": "Taiwan, Province of China",
+  "airQ": 40
+ },
+ {
+  "id": 162,
+  "name": "Christmas Island",
+  "airQ": null
+ },
+ {
+  "id": 166,
+  "name": "Cocos (Keeling) Islands",
+  "airQ": null
+ },
+ {
+  "id": 170,
+  "name": "Colombia",
+  "airQ": null
+ },
+ {
+  "id": 174,
+  "name": "Comoros",
+  "airQ": null
+ },
+ {
+  "id": 175,
+  "name": "Mayotte",
+  "airQ": null
+ },
+ {
+  "id": 178,
+  "name": "Congo",
+  "airQ": null
+ },
+ {
+  "id": 180,
+  "name": "Congo, the Democratic Republic of the",
+  "airQ": null
+ },
+ {
+  "id": 184,
+  "name": "Cook Islands",
+  "airQ": null
+ },
+ {
+  "id": 188,
+  "name": "Costa Rica",
+  "airQ": 14
+ },
+ {
+  "id": 191,
+  "name": "Croatia",
+  "airQ": 28
+ },
+ {
+  "id": 192,
+  "name": "Cuba",
+  "airQ": null
+ },
+ {
+  "id": 196,
+  "name": "Cyprus",
+  "airQ": 32
+ },
+ {
+  "id": 203,
+  "name": "Czech Republic",
+  "airQ": 32
+ },
+ {
+  "id": 204,
+  "name": "Benin",
+  "airQ": null
+ },
+ {
+  "id": 208,
+  "name": "Denmark",
+  "airQ": 27
+ },
+ {
+  "id": 212,
+  "name": "Dominica",
+  "airQ": null
+ },
+ {
+  "id": 214,
+  "name": "Dominican Republic",
+  "airQ": null
+ },
+ {
+  "id": 218,
+  "name": "Ecuador",
+  "airQ": 30
+ },
+ {
+  "id": 222,
+  "name": "El Salvador",
+  "airQ": null
+ },
+ {
+  "id": 226,
+  "name": "Equatorial Guinea",
+  "airQ": null
+ },
+ {
+  "id": 231,
+  "name": "Ethiopia",
+  "airQ": 40
+ },
+ {
+  "id": 232,
+  "name": "Eritrea",
+  "airQ": null
+ },
+ {
+  "id": 233,
+  "name": "Estonia",
+  "airQ": 26
+ },
+ {
+  "id": 234,
+  "name": "Faroe Islands",
+  "airQ": null
+ },
+ {
+  "id": 238,
+  "name": "Falkland Islands (Malvinas)",
+  "airQ": null
+ },
+ {
+  "id": 239,
+  "name": "South Georgia and the South Sandwich Islands",
+  "airQ": null
+ },
+ {
+  "id": 242,
+  "name": "Fiji",
+  "airQ": null
+ },
+ {
+  "id": 246,
+  "name": "Finland",
+  "airQ": 13
+ },
+ {
+  "id": 248,
+  "name": "Åland Islands",
+  "airQ": null
+ },
+ {
+  "id": 250,
+  "name": "France",
+  "airQ": 28
+ },
+ {
+  "id": 254,
+  "name": "French Guiana",
+  "airQ": 24
+ },
+ {
+  "id": 258,
+  "name": "French Polynesia",
+  "airQ": null
+ },
+ {
+  "id": 260,
+  "name": "French Southern Territories",
+  "airQ": null
+ },
+ {
+  "id": 262,
+  "name": "Djibouti",
+  "airQ": null
+ },
+ {
+  "id": 266,
+  "name": "Gabon",
+  "airQ": null
+ },
+ {
+  "id": 268,
+  "name": "Georgia",
+  "airQ": 51
+ },
+ {
+  "id": 270,
+  "name": "Gambia",
+  "airQ": null
+ },
+ {
+  "id": 275,
+  "name": "Palestinian Territory, Occupied",
+  "airQ": null
+ },
+ {
+  "id": 276,
+  "name": "Germany",
+  "airQ": 24
+ },
+ {
+  "id": 288,
+  "name": "Ghana",
+  "airQ": 43
+ },
+ {
+  "id": 292,
+  "name": "Gibraltar",
+  "airQ": 5
+ },
+ {
+  "id": 296,
+  "name": "Kiribati",
+  "airQ": null
+ },
+ {
+  "id": 300,
+  "name": "Greece",
+  "airQ": 63
+ },
+ {
+  "id": 304,
+  "name": "Greenland",
+  "airQ": null
+ },
+ {
+  "id": 308,
+  "name": "Grenada",
+  "airQ": null
+ },
+ {
+  "id": 312,
+  "name": "Guadeloupe",
+  "airQ": 33
+ },
+ {
+  "id": 316,
+  "name": "Guam",
+  "airQ": null
+ },
+ {
+  "id": 320,
+  "name": "Guatemala",
+  "airQ": 27
+ },
+ {
+  "id": 324,
+  "name": "Guinea",
+  "airQ": 24
+ },
+ {
+  "id": 328,
+  "name": "Guyana",
+  "airQ": null
+ },
+ {
+  "id": 332,
+  "name": "Haiti",
+  "airQ": null
+ },
+ {
+  "id": 334,
+  "name": "Heard Island and McDonald Islands",
+  "airQ": null
+ },
+ {
+  "id": 336,
+  "name": "Holy See (Vatican City State)",
+  "airQ": null
+ },
+ {
+  "id": 340,
+  "name": "Honduras",
+  "airQ": null
+ },
+ {
+  "id": 344,
+  "name": "Hong Kong",
+  "airQ": 33
+ },
+ {
+  "id": 348,
+  "name": "Hungary",
+  "airQ": 36
+ },
+ {
+  "id": 352,
+  "name": "Iceland",
+  "airQ": 14
+ },
+ {
+  "id": 356,
+  "name": "India",
+  "airQ": 88
+ },
+ {
+  "id": 360,
+  "name": "Indonesia",
+  "airQ": 37
+ },
+ {
+  "id": 364,
+  "name": "Iran, Islamic Republic of",
+  "airQ": 68
+ },
+ {
+  "id": 368,
+  "name": "Iraq",
+  "airQ": 36
+ },
+ {
+  "id": 372,
+  "name": "Ireland",
+  "airQ": 19
+ },
+ {
+  "id": 376,
+  "name": "Israel",
+  "airQ": 50
+ },
+ {
+  "id": 380,
+  "name": "Italy",
+  "airQ": 26
+ },
+ {
+  "id": 384,
+  "name": "Côte d'Ivoire",
+  "airQ": 49
+ },
+ {
+  "id": 388,
+  "name": "Jamaica",
+  "airQ": null
+ },
+ {
+  "id": 392,
+  "name": "Japan",
+  "airQ": 28
+ },
+ {
+  "id": 398,
+  "name": "Kazakhstan",
+  "airQ": 60
+ },
+ {
+  "id": 400,
+  "name": "Jordan",
+  "airQ": 34
+ },
+ {
+  "id": 404,
+  "name": "Kenya",
+  "airQ": null
+ },
+ {
+  "id": 408,
+  "name": "Korea, Democratic People's Republic of",
+  "airQ": 45
+ },
+ {
+  "id": 410,
+  "name": "Korea, Republic of",
+  "airQ": 55
+ },
+ {
+  "id": 414,
+  "name": "Kuwait",
+  "airQ": 73
+ },
+ {
+  "id": 417,
+  "name": "Kyrgyzstan",
+  "airQ": 61
+ },
+ {
+  "id": 418,
+  "name": "Lao People's Democratic Republic",
+  "airQ": 48
+ },
+ {
+  "id": 422,
+  "name": "Lebanon",
+  "airQ": null
+ },
+ {
+  "id": 426,
+  "name": "Lesotho",
+  "airQ": null
+ },
+ {
+  "id": 428,
+  "name": "Latvia",
+  "airQ": null
+ },
+ {
+  "id": 430,
+  "name": "Liberia",
+  "airQ": null
+ },
+ {
+  "id": 434,
+  "name": "Libya",
+  "airQ": null
+ },
+ {
+  "id": 438,
+  "name": "Liechtenstein",
+  "airQ": 21
+ },
+ {
+  "id": 440,
+  "name": "Lithuania",
+  "airQ": 26
+ },
+ {
+  "id": 442,
+  "name": "Luxembourg",
+  "airQ": 28
+ },
+ {
+  "id": 446,
+  "name": "Macao",
+  "airQ": 55
+ },
+ {
+  "id": 450,
+  "name": "Madagascar",
+  "airQ": null
+ },
+ {
+  "id": 454,
+  "name": "Malawi",
+  "airQ": null
+ },
+ {
+  "id": 458,
+  "name": "Malaysia",
+  "airQ": 20
+ },
+ {
+  "id": 462,
+  "name": "Maldives",
+  "airQ": null
+ },
+ {
+  "id": 466,
+  "name": "Mali",
+  "airQ": 84
+ },
+ {
+  "id": 470,
+  "name": "Malta",
+  "airQ": 41
+ },
+ {
+  "id": 474,
+  "name": "Martinique",
+  "airQ": 31
+ },
+ {
+  "id": 478,
+  "name": "Mauritania",
+  "airQ": null
+ },
+ {
+  "id": 480,
+  "name": "Mauritius",
+  "airQ": null
+ },
+ {
+  "id": 484,
+  "name": "Mexico",
+  "airQ": 51
+ },
+ {
+  "id": 492,
+  "name": "Monaco",
+  "airQ": 24
+ },
+ {
+  "id": 496,
+  "name": "Mongolia",
+  "airQ": 107
+ },
+ {
+  "id": 498,
+  "name": "Moldova, Republic of",
+  "airQ": 32
+ },
+ {
+  "id": 499,
+  "name": "Montenegro",
+  "airQ": 26
+ },
+ {
+  "id": 500,
+  "name": "Montserrat",
+  "airQ": null
+ },
+ {
+  "id": 504,
+  "name": "Morocco",
+  "airQ": null
+ },
+ {
+  "id": 508,
+  "name": "Mozambique",
+  "airQ": null
+ },
+ {
+  "id": 512,
+  "name": "Oman",
+  "airQ": null
+ },
+ {
+  "id": 516,
+  "name": "Namibia",
+  "airQ": null
+ },
+ {
+  "id": 520,
+  "name": "Nauru",
+  "airQ": null
+ },
+ {
+  "id": 524,
+  "name": "Nepal",
+  "airQ": null
+ },
+ {
+  "id": 528,
+  "name": "Netherlands",
+  "airQ": 26
+ },
+ {
+  "id": 531,
+  "name": "Curaçao",
+  "airQ": null
+ },
+ {
+  "id": 533,
+  "name": "Aruba",
+  "airQ": null
+ },
+ {
+  "id": 534,
+  "name": "Sint Maarten (Dutch part)",
+  "airQ": null
+ },
+ {
+  "id": 535,
+  "name": "Bonaire, Sint Eustatius and Saba",
+  "airQ": null
+ },
+ {
+  "id": 540,
+  "name": "New Caledonia",
+  "airQ": 19
+ },
+ {
+  "id": 548,
+  "name": "Vanuatu",
+  "airQ": null
+ },
+ {
+  "id": 554,
+  "name": "New Zealand",
+  "airQ": 28
+ },
+ {
+  "id": 558,
+  "name": "Nicaragua",
+  "airQ": null
+ },
+ {
+  "id": 562,
+  "name": "Niger",
+  "airQ": null
+ },
+ {
+  "id": 566,
+  "name": "Nigeria",
+  "airQ": null
+ },
+ {
+  "id": 570,
+  "name": "Niue",
+  "airQ": null
+ },
+ {
+  "id": 574,
+  "name": "Norfolk Island",
+  "airQ": null
+ },
+ {
+  "id": 578,
+  "name": "Norway",
+  "airQ": 15
+ },
+ {
+  "id": 580,
+  "name": "Northern Mariana Islands",
+  "airQ": null
+ },
+ {
+  "id": 581,
+  "name": "United States Minor Outlying Islands",
+  "airQ": 24
+ },
+ {
+  "id": 583,
+  "name": "Micronesia, Federated States of",
+  "airQ": null
+ },
+ {
+  "id": 584,
+  "name": "Marshall Islands",
+  "airQ": null
+ },
+ {
+  "id": 585,
+  "name": "Palau",
+  "airQ": null
+ },
+ {
+  "id": 586,
+  "name": "Pakistan",
+  "airQ": 116
+ },
+ {
+  "id": 591,
+  "name": "Panama",
+  "airQ": null
+ },
+ {
+  "id": 598,
+  "name": "Papua New Guinea",
+  "airQ": null
+ },
+ {
+  "id": 600,
+  "name": "Paraguay",
+  "airQ": null
+ },
+ {
+  "id": 604,
+  "name": "Peru",
+  "airQ": null
+ },
+ {
+  "id": 608,
+  "name": "Philippines",
+  "airQ": null
+ },
+ {
+  "id": 612,
+  "name": "Pitcairn",
+  "airQ": null
+ },
+ {
+  "id": 616,
+  "name": "Poland",
+  "airQ": 36
+ },
+ {
+  "id": 620,
+  "name": "Portugal",
+  "airQ": 30
+ },
+ {
+  "id": 624,
+  "name": "Guinea-Bissau",
+  "airQ": null
+ },
+ {
+  "id": 626,
+  "name": "Timor-Leste",
+  "airQ": null
+ },
+ {
+  "id": 630,
+  "name": "Puerto Rico",
+  "airQ": null
+ },
+ {
+  "id": 634,
+  "name": "Qatar",
+  "airQ": null
+ },
+ {
+  "id": 638,
+  "name": "Réunion",
+  "airQ": 20
+ },
+ {
+  "id": 642,
+  "name": "Romania",
+  "airQ": 24
+ },
+ {
+  "id": 643,
+  "name": "Russian Federation",
+  "airQ": 27
+ },
+ {
+  "id": 646,
+  "name": "Rwanda",
+  "airQ": null
+ },
+ {
+  "id": 652,
+  "name": "Saint Barthélemy",
+  "airQ": null
+ },
+ {
+  "id": 654,
+  "name": "Saint Helena, Ascension and Tristan da Cunha",
+  "airQ": null
+ },
+ {
+  "id": 659,
+  "name": "Saint Kitts and Nevis",
+  "airQ": null
+ },
+ {
+  "id": 660,
+  "name": "Anguilla",
+  "airQ": null
+ },
+ {
+  "id": 662,
+  "name": "Saint Lucia",
+  "airQ": null
+ },
+ {
+  "id": 663,
+  "name": "Saint Martin (French part)",
+  "airQ": null
+ },
+ {
+  "id": 666,
+  "name": "Saint Pierre and Miquelon",
+  "airQ": null
+ },
+ {
+  "id": 670,
+  "name": "Saint Vincent and the Grenadines",
+  "airQ": null
+ },
+ {
+  "id": 674,
+  "name": "San Marino",
+  "airQ": null
+ },
+ {
+  "id": 678,
+  "name": "Sao Tome and Principe",
+  "airQ": null
+ },
+ {
+  "id": 682,
+  "name": "Saudi Arabia",
+  "airQ": 43
+ },
+ {
+  "id": 686,
+  "name": "Senegal",
+  "airQ": null
+ },
+ {
+  "id": 688,
+  "name": "Serbia",
+  "airQ": 47
+ },
+ {
+  "id": 690,
+  "name": "Seychelles",
+  "airQ": null
+ },
+ {
+  "id": 694,
+  "name": "Sierra Leone",
+  "airQ": null
+ },
+ {
+  "id": 702,
+  "name": "Singapore",
+  "airQ": 32
+ },
+ {
+  "id": 703,
+  "name": "Slovakia",
+  "airQ": 23
+ },
+ {
+  "id": 704,
+  "name": "Viet Nam",
+  "airQ": 45
+ },
+ {
+  "id": 705,
+  "name": "Slovenia",
+  "airQ": null
+ },
+ {
+  "id": 706,
+  "name": "Somalia",
+  "airQ": null
+ },
+ {
+  "id": 710,
+  "name": "South Africa",
+  "airQ": 46
+ },
+ {
+  "id": 716,
+  "name": "Zimbabwe",
+  "airQ": null
+ },
+ {
+  "id": 724,
+  "name": "Spain",
+  "airQ": 32
+ },
+ {
+  "id": 728,
+  "name": "South Sudan",
+  "airQ": null
+ },
+ {
+  "id": 729,
+  "name": "Sudan",
+  "airQ": 76
+ },
+ {
+  "id": 732,
+  "name": "Western Sahara",
+  "airQ": null
+ },
+ {
+  "id": 740,
+  "name": "Suriname",
+  "airQ": null
+ },
+ {
+  "id": 744,
+  "name": "Svalbard and Jan Mayen",
+  "airQ": null
+ },
+ {
+  "id": 748,
+  "name": "Swaziland",
+  "airQ": null
+ },
+ {
+  "id": 752,
+  "name": "Sweden",
+  "airQ": 19
+ },
+ {
+  "id": 756,
+  "name": "Switzerland",
+  "airQ": 25
+ },
+ {
+  "id": 760,
+  "name": "Syrian Arab Republic",
+  "airQ": null
+ },
+ {
+  "id": 762,
+  "name": "Tajikistan",
+  "airQ": 116
+ },
+ {
+  "id": 764,
+  "name": "Thailand",
+  "airQ": 46
+ },
+ {
+  "id": 768,
+  "name": "Togo",
+  "airQ": null
+ },
+ {
+  "id": 772,
+  "name": "Tokelau",
+  "airQ": null
+ },
+ {
+  "id": 776,
+  "name": "Tonga",
+  "airQ": null
+ },
+ {
+  "id": 780,
+  "name": "Trinidad and Tobago",
+  "airQ": 32
+ },
+ {
+  "id": 784,
+  "name": "United Arab Emirates",
+  "airQ": 95
+ },
+ {
+  "id": 788,
+  "name": "Tunisia",
+  "airQ": null
+ },
+ {
+  "id": 792,
+  "name": "Turkey",
+  "airQ": 54
+ },
+ {
+  "id": 795,
+  "name": "Turkmenistan",
+  "airQ": 36
+ },
+ {
+  "id": 796,
+  "name": "Turks and Caicos Islands",
+  "airQ": null
+ },
+ {
+  "id": 798,
+  "name": "Tuvalu",
+  "airQ": null
+ },
+ {
+  "id": 800,
+  "name": "Uganda",
+  "airQ": 107
+ },
+ {
+  "id": 804,
+  "name": "Ukraine",
+  "airQ": 22
+ },
+ {
+  "id": 807,
+  "name": "Macedonia, the former Yugoslav Republic of",
+  "airQ": 55
+ },
+ {
+  "id": 818,
+  "name": "Egypt",
+  "airQ": null
+ },
+ {
+  "id": 826,
+  "name": "United Kingdom",
+  "airQ": 23
+ },
+ {
+  "id": 831,
+  "name": "Guernsey",
+  "airQ": null
+ },
+ {
+  "id": 832,
+  "name": "Jersey",
+  "airQ": 18
+ },
+ {
+  "id": 833,
+  "name": "Isle of Man",
+  "airQ": null
+ },
+ {
+  "id": 834,
+  "name": "Tanzania, United Republic of",
+  "airQ": null
+ },
+ {
+  "id": 840,
+  "name": "United States",
+  "airQ": 24
+ },
+ {
+  "id": 850,
+  "name": "Virgin Islands, U.S.",
+  "airQ": null
+ },
+ {
+  "id": 854,
+  "name": "Burkina Faso",
+  "airQ": null
+ },
+ {
+  "id": 858,
+  "name": "Uruguay",
+  "airQ": null
+ },
+ {
+  "id": 860,
+  "name": "Uzbekistan",
+  "airQ": 90
+ },
+ {
+  "id": 862,
+  "name": "Venezuela, Bolivarian Republic of",
+  "airQ": null
+ },
+ {
+  "id": 876,
+  "name": "Wallis and Futuna",
+  "airQ": null
+ },
+ {
+  "id": 882,
+  "name": "Samoa",
+  "airQ": null
+ },
+ {
+  "id": 887,
+  "name": "Yemen",
+  "airQ": null
+ },
+ {
+  "id": 894,
+  "name": "Zambia",
+  "airQ": null
+ }
+]

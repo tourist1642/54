@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unpollute</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+    <!--Meta tags-->
+    <meta property="og:title" content="Unpollute">
+    <meta property="og:description"
+        content="Unpollute is a non-profit initiative that began in 2022.
+        Its objective is to raise citizen awareness of air pollution and create a consistent and global air quality database.">
+    <meta property="og:image" content="https://i.imgur.com/aMuCARC.png">
+    <meta property="og:url" content="https://unpollutewith.us">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #F8F8FA; font-family: 'Poppins', sans-serif;">
+
+
+    <div class="container my-5">
+        <div class="row" style="background-color: white; border-radius: 2vw;">
+            <div class="col-5" style="margin-top: 5%; margin-left: 2%;">
+                <h1 style="font-size: 5vw; font-weight: 900; color: #0075FF;">Unpollute</h1>
+                <hr>
+                <br>
+                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header" id="current"></div>
+                    <div class="card-body" id="airqbg">
+                        <h5 class="card-title" id="airq"></h5>
+                    </div>
+                </div>
+
+                <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Air Quality Index Map Legend</div>
+                    <div class="card-body">
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #B6DDA7;"></i> &nbspGood
+                            </li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #F3E291;"></i>
+                                &nbspModerate</li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #FF9A47;"></i>
+                                &nbspUnhealthy for minors</li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #FF3333"></i>
+                                &nbspUnhealthy</li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #520001"></i> &nbspVery
+                                Unhealthy</li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: #140000"></i>
+                                &nbspHazardous</li>
+                            <li class="list-group-item"><i class="fas fa-square" style="color: gray"></i> &nbspNot
+                                Available</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col">
+                <canvas id="globe"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 align-items-center" style="background-color: white; border-radius: 2vw;">
+            <h2 style="text-align: center;">What is 'Unpollute'?</h2>
+            <hr>
+            <br>
+            <div class="col">
+                <h5 style="text-align: center;">The <span style="color: #0075FF;">Unpollute project</span> is a
+                    non-profit project started in 2022.<br>
+                    Its mission is to promote air pollution awareness for<br> citizens and provide a unified and
+                    world-wide
+                    air quality information.
+                </h5>
+            </div>
+            <div class="col-4">
+
+                <img src="assets/logo.png" class="img-fluid" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 align-items-center" style="background-color: white; border-radius: 2vw;">
+            <h2 style="text-align: center;">Air Quality Index (AQI) Calculation</h2>
+            <hr>
+            <br>
+            <div class="col">
+                <p>The <span style="color: #0075FF;">Air Quality Index</span> is based on measurement of particulate
+                    matter (PM2.5 and PM10),
+                    Ozone (O3),
+                    Nitrogen Dioxide (NO2), Sulfur Dioxide (SO2) and Carbon Monoxide (CO) emissions. Most of the
+                    stations on
+                    the map are monitoring both PM2.5 and PM10 data, but there are few exceptions where only PM10 is
+                    available.<br>
+                    All measurements are based on hourly readings: For instance, an AQI reported at 8AM means that the
+                    measurement was done from 7AM to 8AM.
+                </p>
+            </div>
+            <div class="col">
+
+                <img src="assets/AQIcal.png" class="img-fluid" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row p-4 align-items-center" style="background-color: white; border-radius: 2vw;">
+            <h2 style="text-align: center;">Top 10 countries with the <span style="color: #0075FF;">worst</span> air
+                pollution index</h2>
+            <hr>
+            <br>
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <!-- <canvas id="myChart0"></canvas> -->
+                <div class="background" style="cursor: pointer;">
+                    <div class="cardx">
+                        <div class="photo"></div>
+                        <h2 style="background-color: #0075FF; border-radius: 1vw; padding: 10px;">Top 10 worst AQI</h2>
+                        <br><br>
+                        <div class="chart">
+                            <div class="bar bar1"><span style="text-align: left;">Bahrain: 334</span></div>
+                            <div class="bar bar2"><span>Bonsia: 212</span></div>
+                            <div class="bar bar3"><span>Chad: 208</span></div>
+                            <div class="bar bar4"><span>China: 242</span></div>
+                            <div class="bar bar5"><span>India: 203</span></div>
+                            <div class="bar bar6"><span>Iran: 394</span></div>
+                            <div class="bar bar7"><span>Kuwait: 555</span></div>
+                            <div class="bar bar8"><span>Kyrgyzstan: 209</span></div>
+                            <div class="bar bar9"><span>Mongolia: 220</span></div>
+                            <div class="bar bar10"><span>Serbia: 189</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row p-4 align-items-center" style="background-color: white; border-radius: 2vw;">
+            <h2 style="text-align: center;">Want to protect yourself against the air pollution?</h2>
+            <hr>
+            <br><br>
+            <h4 style="text-align: center;">Feel tired with the pollution: <span style="color: #0075FF;">Get a
+                    mask!</span></h4>
+            <p style="text-align: center;">There are many kinds of masks for air pollution protection (Totobobo, Respro,
+                Vogmask, 3M N95 ...)
+                available on the market. We are in no way affiliated to any of the mask producers, but here are some of
+                our favorites that we could recommend:
+            </p>
+            <hr>
+            <h2 style="color: #0075FF;">3M™ N95 Respirators</h2>
+            <br>
+            <div class="card mb-3">
+                <img src="assets/mask1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text">The most common and affordable mask are known that the 3M N95 masks (picture
+                        above is for the 3M 9501 model). Despite being very affordable (5 to 6 RMB a piece), the 3M N95
+                        are always among the top performing masks for Particulate Matter (i.e. PM2.5 Air Pollution). One
+                        of the great advantage for the 9501 model is to be foldable, so that you can always take one
+                        with you without it taking much space. And if you forgot to take One, you can also get this mask
+                        from any convenience store in China (like 7-Eleven).<br><br>
+
+                        The "N95" label stands for the mask ability to filter out at least 95% of airborne particles
+                        larger than 0.3 microns (for reference, PM2.5 particles are 2.5 microns). From all the test
+                        result, N95 is good enough for filtering most of the PM2.5 particles, but sensitive persons can
+                        consider using N99 version of those masks (N99 stands for filtering more the 99% of airborne
+                        particles). Note that a similar mask, with model number 9001 is also commonly available and
+                        corresponds to N90 filtration standard.<br><br>
+
+                        Note that to be really efficient, those masks should be used and worn properly to ensure a good
+                        "fit" with the face. You can refer to this page from Singapore government from a simple but good
+                        explanation on wearing N95 masks. Other more complete explanations are also available from the
+                        Centers for Disease Control and Prevention of the U.S. Department of Health & Human Services.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <h2 style="color: #0075FF;">3M™ Aura™ Particulate Respirators</h2>
+            <br>
+            <div class="card mb-3">
+                <img src="assets/mask2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text">For those with a bit more budget and still interrested in the 3M masks, the
+                        Aura™ 93xx series is a very good option. The cost is a bit higher (33 RMB for 1 piece for the
+                        premimum 9332 model, while it is 29 RMB for 5 pcs for the previous 9501).<br><br>
+
+                        Half of the models (93x2) come with an exhaust valve (branded as Cool Flow™), which offers
+                        improved comfort, especially for those having difficulty to breath comfortably while wearing the
+                        masks. There are also 3 levels of filtration performance (FFP1, FFP2 and FFP3). The N95 standard
+                        is almost similar to FFP2 and the N99 to FFP3 ( see wikipedia for the full explanation).
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <h2 style="color: #0075FF;">Totobobo™ Hightech Anti-Pollution Masks</h2>
+            <br>
+            <div class="card mb-3">
+                <img src="assets/mask3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text">Totobobo™ is a professional Singapore company manufacturing their own masks
+                        since 2003. There design and concept is really unique, making it very useful for those on the
+                        move.<br><br>
+
+                        There has been some recent studies showing that totobobo fit test does not perform as well as
+                        other brands: When wearing a mask (even the 3M N95), fit molding is an essential step to ensure
+                        that there are no unfiltered air flow. And this fit moudling is both the strength and weakness
+                        of totobo. On one side, totobo has a unique heat moudling solution - that no other mask have,
+                        but if this step is not done corretly, then the fit test won't be good. For more information,
+                        check totobobo's blog
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <h2 style="color: #0075FF;">Respro® Pollution Masks</h2>
+            <br>
+            <div class="card mb-3">
+                <img src="assets/mask4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text">The Respro® Masks have been on the market for many years, and are especially
+                        suitable in the "urban sports environment", i.e. when biking in the city and having to get
+                        through heavy traffic where cars are the source of pollution (especially those diesel
+                        cars...).<br><br>
+
+                        The mask come with two valves for an easier breathing, as well as with replacable filters. The
+                        filter life span is said to be 69 hours, so assuming that you bike 1 hour every day, that's 3
+                        month use for one filter - not so bad.<br><br>
+
+                        The mask itself is made of Neoprene, which has the advantage of being resiliently stretchable,
+                        as well as beeing adaptable to varying facial features, thus ensuring a good sealing around the
+                        face - and therefore a good "fit".
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <h2 style="color: #0075FF;">Cambridge Masks Co</h2>
+            <br>
+            <div class="card mb-3">
+                <img src="assets/mask5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text">Cambridge Masks is a new commer in the mask market, but with the huge advantage
+                        of beeing lead by Christopher Dobbing, who was previously working for distributing Vogmask in
+                        Asia.<br><br>
+
+                        In terms of filtration efficiency, the Cambridge Masks are using a unique "carbon technology
+                        developed by the UK Ministry of Defence and used by the military for protection against
+                        chemical, nuclear and biological hazards", which gives the mask a 99% filtration efficiency for
+                        PM2.5 particules.<br><br>
+
+                        Furthermore, the mask is also able to filter viruses and bacteria (with an efficiency >99%).
+                        This virus and bacteria protection is achieved by adding a special silver coating layer on the
+                        mask inner protection layer.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <img src="https://aqicn.org/images/coal-hard-truth-airpollution.jpg" alt="">
+        </div>
+
+        <div class="container my-5">
+            <div class="row p-4 align-items-center" style="background-color: white; border-radius: 2vw;">
+                <h2 style="text-align: center;">Air pollution prevention</h2>
+                <hr>
+                <br>
+
+                <div class="row">
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+                        <div class="col">
+                            <div class="card " style="width: 25rem; margin-left: 25%;">
+                                <img src="assets/sol1.png" style="background-color: #E2BBA2;" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #854D28;">Renewable fuel and clean energy
+                                        production</h5>
+                                    <hr>
+                                    <p class="card-text">The most basic solution for air pollution is to move away from
+                                        fossil fuels, replacing them with alternative energies like solar, wind and
+                                        geothermal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 25rem; margin-left: 25%;">
+                                <img src="assets/sol2.png" style="background-color: #F5DDA3;" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #EBB15D;">Energy conservation and efficiency
+                                    </h5>
+                                    <hr>
+                                    <p class="card-text">Producing clean energy is crucial. But equally important is to
+                                        reduce our consumption of energy by adopting responsible habits and using more
+                                        efficient devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <div class="card" style="width: 25rem; margin-left: 25%;">
+                                <img src="assets/sol3.png" style="background-color: #FEC671;" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #F57C00;">Eco-friendly transportation</h5>
+                                    <hr>
+                                    <p class="card-text">Shifting to electric vehicles and hydrogen vehicles, and
+                                        promoting shared mobility (i.e carpooling, and public transports) could reduce
+                                        air pollution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 25rem; margin-left: 25%;">
+                                <img src="assets/sol4.png" style="background-color: #C4E0A3;" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #689F38;">Green building</h5>
+                                    <hr>
+                                    <p class="card-text">From planning to demolition, green building aims to create
+                                        environmentally responsible and resource-efficient structures to reduce their
+                                        carbon footprint.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // var ctx0 = document.getElementById('myChart0').getContext('2d');
+        // var chart0 = new Chart(ctx0, {
+        //     // The type of chart we want to create
+        //     type: 'bar',
+        //     // The data for our dataset
+        //     data: {
+        //         labels: ['Serbia','India','Chad','Kyrgyzstan', 'Bonsia', 'Mongolia', 'China', 'Bahrain', 'Iran', 'Kuwait'],
+        //         datasets: [{
+        //             label: 'Air Pollution Level',
+        //             backgroundColor: '#283457',
+        //             borderColor: '#6B66D5',
+        //             data: [189, 203, 208, 209, 212, 220, 242, 334, 394, 555]
+        //         }]
+        //     },
+        //     // Configuration options go here
+        //     options: {}
+        // });
+
+
+    </script>
+
+
+
+
+
+
+
+    <!-- External JS Libraries -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+    <script src='https://d3js.org/d3-geo.v1.min.js'></script>
+    <script src='https://d3js.org/topojson.v2.min.js'></script>
+    <script
+        src='https://bl.ocks.org/mbostock/raw/7ea1dde508cec6d2d95306f92642bc42/6aac691494f752142a67cc43c51a0fd09896dbd4/versor.js'></script>
+    <script src="./script.js"></script>
+    <script src="globe.js"></script>
+
+</body>
+
+</html>
